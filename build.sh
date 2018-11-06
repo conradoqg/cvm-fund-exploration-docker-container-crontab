@@ -2,6 +2,8 @@
 
 IMAGE=cvm-fund-explorer-docker-container-crontab
 
+chmod +x entrypoint.sh
+
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker build -t $IMAGE .
 
