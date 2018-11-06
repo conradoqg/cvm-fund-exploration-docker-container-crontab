@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE=cvm-fund-exploration-docker-container-crontab
+IMAGE=cvm-fund-explorer-docker-container-crontab
 
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker build -t $IMAGE .
